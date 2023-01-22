@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 10px */
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+
+  /* place items in the center of the body */
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.card {
+  border-radius: 2rem;
+  max-width: 75rem;
+  text-align: center;
+  overflow: hidden;
+  background-color: hsl(0deg, 0%, 100%);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin-bottom: 2rem;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+  gap: 2.55rem;
+  padding: 5rem 3.5rem;
+}
+
+.card-product_type {
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+.card-product_name {
+  font-family: "Fraunces", serif;
+  font-size: 4.1rem;
+  font-weight: 700;
+  word-spacing: 0.2rem;
+}
+
+.card-description {
+  color: hsl(228, 12%, 48%);
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.5;
+  word-spacing: 0.3rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.new-price {
+  color: hsl(158, 36%, 37%);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.old-price {
+  font-size: 1.4rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+.btn {
+  font-size: 1.5rem;
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 0.6rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn span {
+  color: hsl(0, 0%, 100%);
+  margin-left: 1rem;
+}
+
+.btn:hover {
+  background-color: hsl(158, 36%, 60%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 55%;
+  }
+  .card {
+    max-width: 50rem;
+    margin: 3rem;
+    grid-template-columns: 1fr;
+  }
+
+  .card-text-box {
+    padding: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  html {
+    font-size: 50%;
+  }
+  .card {
+    max-width: 40rem;
+    margin: 2rem 5rem;
+  }
+
+  .card-text-box {
+    gap: 2rem;
+    padding: 2.2rem;
+  }
+}
